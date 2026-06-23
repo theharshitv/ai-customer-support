@@ -10,8 +10,7 @@ class ChatRequest(BaseModel):
     customer_id: str
     message: str
     channel: str = "whatsapp"
-
-
+    
 @app.get("/")
 async def home():
     with open("index.html", "r") as f:
